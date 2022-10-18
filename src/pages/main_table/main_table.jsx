@@ -24,7 +24,7 @@ export default class main_table extends React.Component {
       etaj:'',
       spatiu:'',
     }
-    Axios.get("http://localhost:3005/get_activities").then((data) => {
+    Axios.get("https://schedule-platform-test.herokuapp.com/get_activities").then((data) => {
       console.log(data.data)
       this.setState({data_list:data.data})
       //this.setState({list:data.data})
@@ -90,7 +90,7 @@ export default class main_table extends React.Component {
 }
 
 function deleteActivity(day, time_interval){
-  axios.post("http://localhost:3005/delete_activity", {
+  axios.post("https://schedule-platform-test.herokuapp.com/delete_activity", {
     day: day,
     time_interval:time_interval
   })

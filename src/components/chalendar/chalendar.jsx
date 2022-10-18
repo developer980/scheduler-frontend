@@ -80,7 +80,7 @@ class Chalendar extends React.Component {
                                         !ocupied ?
 
                                         <div id = {index} className = "inside-month" onClick = {(e) => {                              
-                                            Axios.post("http://localhost:3005/get_spaces", {
+                                            Axios.post("https://schedule-platform-test.herokuapp.com/get_spaces", {
                                                 date:`${index}/${current_month}/${current_year}`,
                                             }).then((data) => {
                                                 this.props.send_spaces(data.data)

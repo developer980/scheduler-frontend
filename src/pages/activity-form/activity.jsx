@@ -96,7 +96,7 @@ class activity extends React.Component {
                 this.state.time_interval &&this.state.floor
                 && this.state.space){
 
-                Axios.post("http://localhost:3005/schedule", {
+                Axios.post("https://schedule-platform-test.herokuapp.com/schedule", {
                   activityname:this.state.activityname,
                   day:this.state.day,
                   coord:this.state.coord,

@@ -11,7 +11,7 @@ export default function Confirmation() {
   //let user = false;
   console.log(token)
   console.log("user" + user)
-  !user && Axios.post("http://localhost:3005/verify_user", {
+  !user && Axios.post("https://schedule-platform-test.herokuapp.com/verify_user", {
           token:token
         }).then(data => { console.log(data.data)
           console.log(data.data[0])
