@@ -67,7 +67,7 @@ export default class main_table extends React.Component {
           {
             this.state.data_list ? 
               this.state.data_list.filter(item => item.activity_name.toLowerCase().includes(this.state.nume_activitate.toLowerCase()) && item.day.toLowerCase().includes(this.state.data.toLowerCase())
-               && item.space.toLowerCase().includes(this.state.spatiu.toLowerCase()) && item.floor.toLowerCase().includes(this.state.etaj.toLowerCase())
+              && item.floor.toLowerCase().includes(this.state.etaj.toLowerCase())
                && item.time_interval.includes(this.state.interval)).map(item => 
                 {return(
                   <tbody>
