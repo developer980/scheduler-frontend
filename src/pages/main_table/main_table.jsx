@@ -32,7 +32,7 @@ export default class main_table extends React.Component {
   }
 
   render() {
-    console.log(this.state)
+    console.log("State" + this.state)
     console.log(this.state.data_list)
     console.log(this.state.list)
     return (
