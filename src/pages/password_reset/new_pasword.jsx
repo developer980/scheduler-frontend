@@ -35,7 +35,7 @@ export default function New_pasword() {
         const hashedPassword = bcrypt.hashSync(password, salt)
         console.log("salt = " + salt)
         console.log("hash " + hashedPassword)
-        axios.post("http://localhost:3005/change_password", {
+        axios.post("https://schedule-platform-test.herokuapp.com/change_password", {
           token:token,
           password:hashedPassword
         }).then(result => {
