@@ -1,0 +1,166 @@
+.schedule-window{
+    background-color: white;
+    width:700px;
+    height:500px;
+    margin:auto;
+    border-radius:20px;
+    margin-top: 20px;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    display: none;
+}
+
+
+.clear {
+    border:1px solid rgb(164, 164, 164);
+    border-radius: 20px;
+    width: 100px;
+    color:rgb(104, 104, 104);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.clear:hover{
+    background-color: rgb(200, 200, 200);
+}
+
+.hours > div{
+    font-size: 20px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hours{
+    height:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(213, 213, 213);
+    color: rgb(141, 141, 141);
+}
+
+.hours > div > input{
+    width:100px;
+    border:1px solid rgb(207, 207, 207);
+    border-radius:10px;
+    height: 40px;
+    margin: 5px;
+    color:rgb(130, 130, 130);
+    font-size: 17px;
+}
+
+.space-search{
+    border-radius: 20px;
+    width: 200px;
+    border: none;
+    border:1px solid rgb(149, 149, 149);
+    color: rgb(99, 99, 99);
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:910px){
+    .schedule-window{
+        background-color: white;
+        width:70%;
+        height:400px;
+        margin:auto;
+        border-radius:20px;
+        margin-top: 20px;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        display: none;
+    }
+
+    .hours > div > input{
+        width:50px;
+        border:1px solid rgb(207, 207, 207);
+        border-radius:10px;
+        height: 23px;
+        margin: 0px;
+        color:rgb(130, 130, 130);
+        font-size: 17px;
+    }
+
+    .clear {
+        border:1px solid rgb(164, 164, 164);
+        border-radius: 20px;
+        width: 100px;
+        color:rgb(104, 104, 104);
+        font-size: 10px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        transition: all 0.25s;
+    }   
+
+    .space-search{
+        border-radius: 20px;
+        width: 200px;
+        border: none;
+        border:1px solid rgb(149, 149, 149);
+        color: rgb(99, 99, 99);
+        padding: 2px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .hours > div{
+        font-size: 15px;
+    }
+}
+
+.hours > div > input:focus{
+    outline-width: 0px;
+}
+
+.spaces{
+    /* background-color: red; */
+    height:70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+    /* justify-content: space-between; */
+}
+
+.unocupied {
+    height:30%;
+    width: 15%;
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(114, 114, 114);
+    font-size: 15px;
+    cursor:pointer;
+    border-radius: 20px;
+    transition:all 0.25s;
+    padding:15px;
+}
+
+.ocupied {
+    height:30%;
+    width: 15%;
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(186, 186, 186);
+    font-size: 15px;
+    cursor:default;
+    padding:15px;
+}
+
+.space-search:focus{
+    outline-width: 0px;
+}
