@@ -43,7 +43,7 @@ export default class Log_in extends React.Component {
               <button className = "submit" onClick={(e) => {
                 e.preventDefault()
                   console.log(bcrypt.hashSync(this.state.password))
-                  Axios.post("http://localhost:3005/get_user", {
+                  Axios.post("https://schedule-platform-test.herokuapp.com/get_user", {
                       email:this.state.email,
                       password:this.state.password
                     }).then(data => {

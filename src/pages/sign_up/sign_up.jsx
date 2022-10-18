@@ -78,7 +78,7 @@ class Sign_up extends Component {
               console.log(hashedPassword)
               console.log(salt)
 
-              Axios.post("http://localhost:3005/post_user", {
+              Axios.post("https://schedule-platform-test.herokuapp.com/post_user", {
                 email:this.state.email,
                 username:this.state.username,
                 password:hashedPassword,
