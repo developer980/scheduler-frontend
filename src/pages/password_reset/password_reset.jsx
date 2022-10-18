@@ -28,7 +28,7 @@ export default function Password_reset() {
         }} placeholder='email@example.com' />
         <button onClick={() => {
             emailSent(1)
-            Axios.post("http://localhost:3005/password_reset", {
+            Axios.post("https://schedule-platform-test.herokuapp.com/password_reset", {
                 email: email,
                 token:token
             })

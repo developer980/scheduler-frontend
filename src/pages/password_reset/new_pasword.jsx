@@ -11,7 +11,7 @@ export default function New_pasword() {
 
   const token = useParams().token
 
-  axios.post("http://localhost:3005/verify_path", {
+  axios.post("https://schedule-platform-test.herokuapp.com/verify_path", {
     token:token
   }).then(data => {
     console.log(data.data)
