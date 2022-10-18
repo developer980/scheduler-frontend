@@ -9,21 +9,22 @@ export default function Header() {
             Scheduler        
         </Link>
 
-            <div>
-                <Link to = "/activity">
-                    Schedule an activity
-                </Link>
-                <Link to = "/table">
-                    Activity list
-                </Link>     
-                    {
-                        localStorage.getItem("eml") && 
-                            <Link to = "/" onClick={() => {localStorage.removeItem("eml")}}>
-                                Log out
-                            </Link>
-
-                    }
-            </div>
+           
+        {
+            localStorage.getItem("eml") &&  
+                <div>
+                    <Link to = "/activity">
+                        Schedule an activity
+                    </Link>
+                    <Link to = "/table">
+                        Activity list
+                    </Link>     
+                    <Link to = "/" onClick={() => {localStorage.removeItem("eml")}}>
+                        Log out
+                    </Link>
+                </div>
+            
+        }
     </nav>
   )
 }
