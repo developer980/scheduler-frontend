@@ -82,3 +82,8 @@ export default class Log_in extends React.Component {
     }
   }
 
+  function SetEmail(email){
+    // localStorage.setItem('email', JSON.stringify(email))
+    ls.set('eml', email)
+    window.open("https://schedule-app-frontend.netlify.app/")
+  }
